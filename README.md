@@ -1,5 +1,9 @@
 # A Stimulus Controller to setup the Shopify App Bridge
 
+## Warning
+
+This is in no way production ready, please help make it so ;)
+
 
 ## Getting started
 
