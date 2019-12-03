@@ -1,0 +1,20 @@
+{
+  "name": "stimulus-shopify-app-bridge",
+  "version": "0.1.0",
+  "description": "A Stimulus.js parent controller for setting up the Shopify App Bridge",
+  "main": "stimulus-shopify-app-bridge-controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stimulus",
+    "shopify",
+    "app bridge"
+  ],
+  "author": "FORSBERG+two",
+  "license": "MIT",
+  "dependencies": {
+    "stimulus": "^1.1.1",
+    "@shopify/app-bridge": "^1.11.1"
+  }
+}
