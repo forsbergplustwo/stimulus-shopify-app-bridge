@@ -24,9 +24,6 @@ export default class extends Controller {
 
   connect () {
     this.updateHistory()
-    this.bindStopLoadingEvent()
-    this.bindStartLoadingEvent()
-    console.log('Connected!')
   }
 
   disconnect () {
@@ -36,24 +33,12 @@ export default class extends Controller {
     this.appHistory.dispatch(History.Action.PUSH, window.location.pathname)
   }
 
-  bindStartLoadingEvent () {
-    this.startLoading = this.startLoading.bind(this)
-    window.addEventListener('beforeunload', this.startLoading, { once: true })
-  }
-
-  bindStopLoadingEvent () {
-    this.stopLoading = this.stopLoading.bind(this)
-    window.addEventListener('DOMContentLoaded', this.stopLoading, { once: true })
-  }
-
   startLoading () {
     this.appLoading.dispatch(Loading.Action.START)
-    console.log('Started loading')
   }
 
   stopLoading () {
     this.appLoading.dispatch(Loading.Action.STOP)
-    console.log('Stopped loading')
   }
 
   // Flash helpers
