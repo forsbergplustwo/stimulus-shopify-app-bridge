@@ -1,6 +1,6 @@
 {
   "name": "stimulus-shopify-app-bridge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Stimulus.js parent controller for setting up the Shopify App Bridge",
   "homepage": "https://github.com/forsbergplustwo/stimulus-shopify-app-bridge",
   "main": "stimulus-shopify-app-bridge-controller.js",
