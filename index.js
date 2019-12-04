@@ -24,6 +24,7 @@ export default class extends Controller {
 
   connect () {
     this.updateHistory()
+    this.stopLoading()
   }
 
   disconnect () {
